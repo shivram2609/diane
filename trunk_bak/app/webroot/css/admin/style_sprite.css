@@ -1,0 +1,112 @@
+/*
+	 Organic Tabs
+	 by Chris Coyier
+	 http://css-tricks.com
+*/
+
+* { margin: 0; padding: 0; }
+
+html { overflow-y: scroll; }
+a { text-decoration: none; }
+a:focus { outline: 0; }
+
+#page-wrap { width: 440px; margin: 80px auto; }
+
+
+/* Generic Utility */
+.hide { position: absolute; top: -9999px; left: -9999px; }
+
+
+/* Specific to example one */
+
+#example-one { background: #eee; padding: 10px; margin: 0 0 20px 0; -moz-box-shadow: 0 0 5px #666; -webkit-box-shadow: 0 0 5px #666; }
+
+#example-one .nav { overflow: hidden; margin: 0 0 10px 0; }
+#example-one .nav li { width: 97px; float: left; margin: 0 10px 0 0; }
+#example-one .nav li.last { margin-right: 0; }
+#example-one .nav li a { display: block; padding: 5px; background: #959290; color: white; font-size: 10px; text-align: center; border: 0; }
+#example-one .nav li a:hover { background-color: #111; }
+
+#example-one ul { list-style: none; }
+#example-one ul li a { display: block; border-bottom: 1px solid #666; padding: 4px; color: #666; }
+#example-one ul li a:hover { background: #fe4902; color: white; }
+#example-one ul li:last-child a { border: none; }
+
+#example-one ul li.nav-one a.current, #example-one ul.featured li a:hover { background-color: #0575f4; color: white; }
+#example-one ul li.nav-two a.current, #example-one ul.core li a:hover { background-color: #d30000; color: white; }
+#example-one ul li.nav-three a.current, #example-one ul.jquerytuts li a:hover { background-color: #8d01b0; color: white; }
+#example-one ul li.nav-four a.current, #example-one ul.classics li a:hover { background-color: #FE4902; color: white; }
+
+
+
+/* Specific to example two */
+
+#example-two .list-wrap { background: #e4e4e4; margin: 0 0 0px 0; box-shadow: 0 -1px 0 0 #afafaf inset;border-radius:0px 0px 5px 5px;-moz-border-radius:0px 0px 5px 5px;-webkit-border-radius:0px 0px 5px 5px;padding:10px;padding:10px 8px\9;}
+#example-two{background: url(../img/tabs-bg-img.png) no-repeat left bottom; float:left; width:100%; padding:0px 0 35px 0;}
+
+#example-two ul { list-style: none; }
+#example-two ul li a { display: block; border-bottom: 1px solid #666; padding: 4px; color: #666; }
+#example-two ul li a:hover { background: #333; color: white; }
+#example-two ul li:last-child a { border: none; }
+
+#example-two .nav { height:62px; }
+#example-two .nav li { float: left; margin: 0 5px 0 0; }
+#example-two .nav li.last { margin-right: 0; }
+#example-two .nav li a { display: block; padding: 5px; color: white; font-size: 10px; text-align: center; border: 0;background: url("../img/hover_tab.png") repeat-x scroll left bottom transparent;height:55px;font-size:20px;font-family: 'BookmanOldStyle-Bold';border-radius:4px 4px 0px 0px;-webkit-border-radius:4px 4px 0px 0px;-moz-border-radius:4px 4px 0px 0px; }
+
+#example-two li a.current,#example-two li a.current:hover {  background: url("../img/hover_tab.png") repeat-x scroll left bottom transparent;
+    border: 0 none;
+    border-radius: 4px 4px 0 0;
+    color: white;
+    display: block;
+    font-family: 'BookmanOldStyle-Bold';
+    font-size: 20px;
+    height: 55px;
+    padding: 5px;
+    text-align: center;}
+#example-two .nav li a:hover, #example-two .nav li a:focus {  background: url("../img/hover_tab.png") repeat-x scroll left bottom transparent;
+    border: 0 none;
+    border-radius: 4px 4px 0 0;
+    color: white;
+    display: block;
+    font-family: 'BookmanOldStyle-Bold';
+    font-size: 20px;
+    height: 55px;
+    padding: 5px;
+    text-align: center;}
+
+
+	
+#example-two .nav li.nav-two a,#example-two .nav li.nav-one a,#example-two .nav li.nav-three a
+{ background: url("../img/normal_tab.png") repeat-x scroll left top transparent;border: 0 none;border-radius: 4px 4px 0 0;color: #424242;
+display: block;font-family: 'BookmanOldStyle-Bold';font-size: 20px;height: 45px;padding: 5px;text-align: center;border-radius:4px 4px 0px 0px;position:relative;top:10px;width:215px; line-height: 52px;}
+
+#example-two .nav li.nav-two a:hover, #example-two li.nav-two a.current,#example-two .nav li.nav-one a:hover, #example-two li.nav-one a.current,#example-two .nav li.nav-three a:hover, #example-two li.nav-three a.current
+
+{background: url("../img/hover_tab.png") repeat-x scroll left top transparent;border: 0 none;border-radius: 4px 4px 0 0;color: white;display: block;font-family: 'BookmanOldStyle-Bold';font-size: 20px;height: 55px;padding: 5px;text-align: center;border-radius:4px 4px 0px 0px;position:relative;top:0px;width:215px; line-height: 52px;}
+
+#example-two .nav li:last-child{margin:0px;float:right;}
+
+
+#example-two ul.nav li a:hover{ background: url("../img/tab_bottom_arrow.png") repeat-x scroll 50% bottom transparent;}
+
+
+.list-wrap{float:left; width: 97.1%;}
+.list-wrap ul{float:left; width:100%;}
+.list-wrap ul li{float:left;width:100%;background: url("../img/sprite_bottom_border.png") repeat-x scroll left bottom transparent;  padding-bottom: 10px;padding-top: 10px;}
+.list-wrap ul li:last-child{background:none;}
+.list-wrap ul li a{border-bottom:none!important;}
+.list-wrap ul li a:hover{background:none;}
+.left_list_bx,.schedule_box{float:left; width:450px;font-size:#000;font-size:16px;font-family: 'BookmanOldStyle-Bold';}
+.list-wrap ul li a.blog_link{float:right;color:#238fb6!important;font-family: 'Bookman-Light';font-size:16px;background:url("../img/blog_link_arrow.png") no-repeat scroll right 11px transparent !important;padding-right: 13px!important; }
+.schedule_box{color:#515151;text-shadow:0px 1px 0px #fff;}
+.schedule_box span{color:#515151;font-size:13px;font-family: 'Bookman-Light';text-shadow:0px 1px 0px #fff;}
+.schedule_box span.date{color:#d90e0b;}
+.read_more2{float:right;}
+.list-wrap ul  li a span.read_more a.view_btn{padding:0px;}
+.read_more2 a.view_btn{left: 0;
+    margin-top: 0 !important;
+    padding-left: 10px !important;
+    padding-top: 0 !important; }
+
+span.arrow_down{ background:url(../img/tab_bottom_arrow.png) no-repeat; width:18px; height:12px; position:absolute; top:63px; left:50%; float:left; }

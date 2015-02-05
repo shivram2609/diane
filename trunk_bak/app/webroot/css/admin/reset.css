@@ -1,0 +1,35 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {margin: 0;	padding: 0;	border: 0;	outline: 0;	font-size: 100%;	vertical-align: baseline; background: transparent; margin:0; padding:0;}
+body {line-height: 1;}
+ol, ul,li {list-style-type: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+
+/* remember to define focus styles! */
+:focus {outline: 0;}
+
+/* remember to highlight inserts somehow! */
+ins {text-decoration: none;}
+del {text-decoration: line-through;}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {border-collapse: collapse;border-spacing: 0;}
+.left{ float:left;}
+.right{ float:right!important;}
+.clear{clear:both; font-size:1px !important; line-height:normal !important; height:0px !important;}img{ border:none;}
+a{ text-decoration:none;}
+.margin_none{margin:0px!important;}
+.no_left{margin-left:0px!important;} 
+.no_padding{padding:0px!important;}
+.no_right{margin-right:0px!important;}
+.border_none{border:none!important;}
+.bg_none{background:none!important;}
+.clearboth{clear:both;}

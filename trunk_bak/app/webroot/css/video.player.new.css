@@ -1,0 +1,239 @@
+@charset "utf-8";
+/* CSS for html5 video */
+
+div#video_player_box1 {
+	width: 100%;
+	background: #000;
+	margin: 0px auto;
+	position:relative;
+	z-index: 2;
+	text-align:center;height:90%;
+	}
+
+div#video_controls_bar1 {
+	background:url("../img/mashup/bottom_background.png")repeat-x;
+    color: #CCCCCC;
+    font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+    padding: 10px 2%;
+    position: relative;
+    width:96%;
+    height:38px;
+    }
+.time_main1{float:left;margin:10px 1%;}
+#playpausebtn1 {
+	background: url(../img/mashup/play_button_2.png) no-repeat;
+	border: none;
+	width: 25px !important;
+	height: 27px !important;
+	cursor: pointer;
+	opacity: 0.5;float:left;margin:7px 5px 0 0;
+	border-radius:0px !important;
+}
+a#mutebtn1{
+	background: url("../img/mashup/volume_3.png") no-repeat scroll 0 0 transparent;
+	border: medium none;
+	float:left;
+	height: 19px;
+	padding: 0;
+	text-indent: -99999px;
+	width: 28px;
+	cursor: pointer;
+	margin:0px;
+}
+
+#playpausebtn1:hover {
+	opacity: 1;
+}
+.fullscreenbtn1{background: url(../img/mashup/v_bdr.png) repeat-y 0 0; bottom: 10px;
+    float: left;
+    height: 28px;
+    padding: 16px 10px 14px;
+    position: relative;}
+.dimlightbtn1{background: url(../img/mashup/v_bdr.png) repeat-y 0 0; 
+	bottom: 0;
+    height: 26px;
+    padding: 14px 0 18px 3px;
+    position: absolute;
+    right: 3px;}
+#fullscreenbtn1 {
+	background: url(../img/mashup/full_screen_icon.png) no-repeat scroll 0 0 transparent;
+	border: medium none;
+	width: 30px;
+	height: 24px;
+	padding : 13px;
+	cursor: pointer;
+	border-radius:0px;
+}
+
+#dimlight1 {
+	 background: url("../img/mashup/radial_light.png") no-repeat scroll 0 -1px transparent;
+    border: medium none;
+    cursor: pointer;
+    height: 37px;
+    margin: -5px 0 0;
+    padding: 13px;
+    position: relative;
+    width: 33px;
+}
+
+input#volumeslider1 {
+	width: 60px;
+}
+
+#shadow1 {
+    background-image: url("../img/mashup/shade1x1.png");
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+.video_ready_fade1 {background: url("../img/mashup/AjaxLoader3.gif") no-repeat scroll center center #E4DED7; float: right; height: 100%; opacity: 0.8; position: absolute; width: 100%; z-index: 5; top : 0;left:0;display: none;}
+
+.video_center_play1 { 
+	background: url("../img/mashup/play_button.png") no-repeat scroll center center;
+    cursor: pointer;
+    display: none;
+    float: right;
+    height: 81px;
+    left: 47%;
+    position: absolute;
+    top: 44%;
+    width: 73px;
+    z-index: 4;
+}
+
+#curtimetext1{font-family:arial; color:#EDBA16; font-weight:bold;}
+#durtimetext1{font-family:arial; font-weight:bold;}
+
+
+/* SEEK BAR STUFF */
+.seekslider-outer1{
+    background-color: #156598;
+    border: 1px solid #2082BF;
+    border-radius: 6px 6px 6px 6px;
+    box-shadow: 0 0 0 2px #00416B inset;
+    float: left;
+    height: 12px;
+    margin: 12px 0 0;
+    padding: 0 2px;
+    position: relative;
+    width:55%;
+}
+
+#seekslider1 {
+	
+    width: 97.6%;/*300px;*/float:left;margin:2px 0px 0 0;
+	padding:0 2px;
+	position: relative;
+	height:8px;
+}
+
+#seekslider1 .ui-slider-handle {
+    background: url(../img/mashup/volume_slider.png) no-repeat;
+    height: 18px;
+    top: -3px;
+    width:17px;
+	border:none;
+    box-shadow: none;
+}
+
+.ui-slider-handle {
+    cursor: default;
+    display: block;
+    margin-left: -0.6em;
+    outline: medium none;
+    position: absolute;
+    z-index: 2;
+}
+
+.ui-slider-range {
+	 background: url(../img/mashup/progressbar_bg.png)repeat-x #ffca2e;
+    border: 0 none;
+    bottom: 2px;
+    display: block;
+    height:8px;
+    left:0px;
+    position: absolute;
+	border-radius: 5px;
+    width:100%;
+    z-index: 1;
+}
+
+#ui-slider-range2-1 {
+	background: #B1A688;
+    border: 0 none;
+    bottom: 0px;
+    display: block;
+    height:8px;
+    left:0px;
+    position: absolute;
+    z-index: 1;
+	border-radius: 5px;
+}
+
+/* End seek bar */
+
+/* Volume slide bar */
+.volume-box1 {
+    bottom: 10px;
+    color: #FFFFFF;
+    float: left;
+    padding: 18px 1% 0;
+    /*right: 18px;*/
+    width:14%;
+    height: 40px;
+    opacity: 1;
+    position: relative;
+    visibility: visible;
+	background: url(../img/mashup/v_bdr.png) repeat-y 0 0;
+}
+
+.volume-slider1 {
+    background: #2082BF;
+    border-radius:3px;
+    height:4px;
+    left: 10px;
+    top:8px;
+    position: relative;
+    transition: all 0.1s ease-in-out 0s;
+    width:70%;float:left;
+}
+
+.volume-slider1 .ui-slider-range {
+    background: none repeat scroll 0 0 #FFFFFF;
+    height: 4px;
+    top: 0;
+}
+
+.volume-slider1 .ui-slider-handle {
+   background: url(../img/mashup/volume_slider.png) no-repeat;
+    height: 16px;
+    left: -4px;
+    margin-bottom: -0.6em;
+    width: 17px;top:-5px;
+	 box-shadow: none;
+    border: none;
+}
+@media only screen and (max-width:1024px){
+.seekslider-outer1{width:40%;}
+.volume-box1{width: 17%;}
+.volume-slider1{width: 55%}
+}
+
+@media only screen and (max-width:800px){
+.seekslider-outer1{width:20%;}
+.volume-box1{width: 28%;}
+.volume-slider1{width: 55%}
+}
+
+@media only screen and (max-width:480px){
+.seekslider-outer1{width:15%; display:none;}
+.time_main1{font-size: 12px; margin: 10px 0; display:none;}
+.volume-box1{width: 20%; display:none;}
+.volume-slider1{width: 35%}
+#fullscreenbtn1{height: 15px;  padding: 8px;  width: 15px; background-size: 100% auto !important; display:none;}
+.fullscreenbtn1{display:none;}
+div#video_player_box1 {height:300px;}
+}
+/* Volume slide bar end */

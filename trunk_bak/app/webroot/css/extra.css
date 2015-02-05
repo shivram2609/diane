@@ -1,0 +1,29 @@
+.media-hide{display:none;}
+.media-show{display:inline;}
+.packagecont {
+ -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #F4F4F4;
+    border-bottom-color: #9A9A9A;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-outset: 0 0 0 0;
+    border-image-repeat: stretch stretch;
+    border-image-slice: 100% 100% 100% 100%;
+    border-image-source: none;
+    border-image-width: 1 1 1 1;
+    border-top-color: #9A9A9A;
+    border-top-style: solid;
+    border-top-width: 1px;
+    margin-bottom: 15px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 10px;
+    padding-left: 33px;
+    padding-right: 0;
+    padding-top: 10px;
+    width: 98%;
+}
